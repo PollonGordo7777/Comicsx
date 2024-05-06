@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho total */
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .main-nav {
+    background-color: #333;
+    width: 100%; /* Asegura que la barra de navegación ocupe el ancho total */
+    display: flex;
+    justify-content: center; /* Centra el contenido de navegación */
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%; /* Ocupa el ancho total de la barra de navegación */
+    padding-left: 0; /* Elimina el padding izquierdo */
+    margin: 0;
+    justify-content: space-around; /* Distribuye los elementos uniformemente */
+  }
+  
+  .main-nav li {
+    padding: 10px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #555;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  nav, aside, main {
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  nav, aside {
+    width: 150px; /* Anchura fija para navegación y sidebar */
+  }
+  
+  main {
+    flex-grow: 1;
+    min-width: calc(60% - 20px); /* Asegura que main tenga una anchura mínima */
+  }
+  
+  .main-button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .main-button:hover {
+    background-color: #005f73;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+  }
+  
