@@ -1,99 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header>
-
-   <div>
-    <div style="display:inline-block;vertical-align:top;float:left;" align="left">
-      <img src="img/WhatsApp Image 2024-04-29 at 19.09.55.jpeg" alt="Neggawatt" height="150px" width="150px"/>
+  <header>
+    <div class="topnav">
+      <a href="index.html">
+        <img src="img/comicsx.png" alt="Neggawatt" height="auto" width="200px">
+      </a>
+      <form>
+        <input type="text" placeholder="Buscar.." name="buscador">
+        <button id="buttons_header" type="submit">Buscar</button>
+      </form>
     </div>
-    <div style="display:inline-block;float:left;margin-top: 30px; margin-left: 25px;">
-      <h1 style="color:Black;"> COMICX</h1>
+    <div class="buttons_header">
+      <button id="buttons_header">Lista de deseados</button>
+      <button id="buttons_header">Cesta</button>
     </div>
-</div>
-<div class="topnav"><input type="text" placeholder="Buscar.."></div>
-    <button type="submit" align="left" style="float:right; margin-top: 10px; margin-right: 100px;">Buscar</button>
-    <button style="vertical-align: middle; ">Lista de deseados</button>
-    <button  align="right">Cesta</button>
+  </header>
 
-
-
+  <nav class="main-nav">
+    <ul>
+      <li><a class="nav-link" href="index.html">Inicio</a></li>
+      <li><a class="nav-link" href="comicsamericanos.html">Comics americanos</a></li>
+      <li><a class="nav-link" href="comics_europeos.html">Comics europeos</a></li>
+      <li><a class="nav-link" href="acercade.html">Acerca de nosotros</a></li>
     </ul>
-      </header>
-    
-      <nav class="main-nav">
-        <ul>
-          <li><a class="nav-link" href="#home">Inicio</a></li>
-          <li><a class="nav-link" href="comicsamericanos.html">Comics americanos</a></li>
-          <li><a class="nav-link" href="#comicseuropeos">Comics europeos</a></li>
-          <li><a class="nav-link" href="pagina3.html">Acerca de nosotros</a></li>
-        </ul>
-      </nav>
-    
-      <div class="container">
-        <main>
-          <article>
-            <h2>Catálogo de cómics</h2>
-            <p>Comics destacados...</p>
-            <table>
-              <td><img src="img/roblox-nugget-roblox-man-face.png" alt="Comic1"></td>
-              <td><img src="img/roblox-nugget-roblox-man-face.png" alt="Comic1"></td>
-              <td><img src="img/roblox-nugget-roblox-man-face.png" alt="Comic1"></td>
-              <td><img src="img/roblox-nugget-roblox-man-face.png" alt="Comic1"></td>
-              <tr><img src="img/roblox-nugget-roblox-man-face.png" alt="Comic1"></tr>
-              <tr><img src="img/roblox-nugget-roblox-man-face.png" alt="Comic1"></tr>
-              <tr><img src="img/roblox-nugget-roblox-man-face.png" alt="Comic1"></tr>
-              <tr><img src="img/roblox-nugget-roblox-man-face.png" alt="Comic1"></tr>
+  </nav>
 
-            </table>
-            <button class="main-button">Ver más</button>
-          </article>
-        </main>
-        
-        <aside>
-          <h2>Categorías</h2>
-          <ul>
-            <li>Acción</li>
-            <li>Nugget Man</li>
+  <div class="container">
+    <main>
+      <article>
+        <h2>Catálogo de cómics</h2>
+        <p>Comics destacados...</p>
+        <div class="comic-grid">
+          <img src="img/roblox-nugget-roblox-man-face.png" alt="Comic1">
+          <img src="img/roblox-nugget-roblox-man-face.png" alt="Comic2">
+          <img src="img/roblox-nugget-roblox-man-face.png" alt="Comic3">
+          <img src="img/roblox-nugget-roblox-man-face.png" alt="Comic4">
+          <img src="img/roblox-nugget-roblox-man-face.png" alt="Comic5">
+          <img src="img/roblox-nugget-roblox-man-face.png" alt="Comic6">
+          <img src="img/roblox-nugget-roblox-man-face.png" alt="Comic7">
+          <img src="img/roblox-nugget-roblox-man-face.png" alt="Comic8">
+        </div>
+        <button class="main-button">Ver más</button>
+      </article>
+    </main>
+
+    <aside>
+      <h2>Categorías</h2>
+      <ul>
+        <li>Acción</li>
+        <li>Nugget Man</li>
+      </ul>
+    </aside>
+  </div>
+
+
+
+  <footer>
+    <div class="row primary">
+      <div class="flexbox-container">
+        <div class="column links">
+          <h3>Comics Americanos</h3>
+          <ul id="list_footer">
+            <li><a href="#marvelcomics">Marvel Comics</a></li>
+            <li><a href="#dccomics">DC comics</a></li>
+            <li><a href="#novedades">Novedades</a></li>
+            <li><a href="#proximamente">Próximamente</a></li>
           </ul>
-        </aside>
+        </div>
+        <div class="column links">
+          <h3>Comics Europeos</h3>
+          <ul id="list_footer">
+            <li><a href="#tintin">Tintin</a></li>
+            <li><a href="#blackSad">BlackSad</a></li>
+            <li><a href="#novedades">Novedades</a></li>
+            <li><a href="#próoimamente">Próximamente</a></li>
+          </ul>
+        </div>
+        <div class="column links">
+          <h3>Categorías</h3>
+          <ul id="list_footer">
+            <li><a href="#fantasia">Fantasía</a></li>
+            <li><a href="#aventuras">Aventuras</a></li>
+            <li><a href="#accion">Acción / Bélicos</a></li>
+            <li><a href="#cienciaficcion">Ciencia ficción</a></li>
+          </ul>
+        </div>
       </div>
-    
- 
-
-    
+      <div class="footer-logo">
+        <img class="footer-logo" src="img/comicsx_white.png" alt="Logo" width="200px" height="auto">
+      </div>
+    </div>
+    <div class="social">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram-square"></i>
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-youtube-square"></i>
+      <i class="fab fa-whatsapp-square"></i>
+    </div>
+    <div class="row copyright">
+      <div class="footer-menu">
+        <a class="nav-link" href="index.html">Inicio</a>
+        <a class="nav-link" href="comicsamericanos.html">Comics americanos</a>
+        <a class="nav-link" href="comics_europeos.html">Comics europeos</a>
+        <a class="nav-link" href="acercade.html">Acerca de nosotros</a>
+      </div>
+      <p>Copyright © 2024 Comicx</p>
+    </div>
+    </div>
+  </footer>
 </body>
-<footer>
-<table style="width: 50%;">
-  <tr>
-  <th>Comics Americanos</th>
-  <th>Comics Europeos</th>
-  <th>Categorías</th>
-  <th>Quienes Somos</th>
-  </tr>
-  <tr>
-    <td>Marvel Comics</td>
-    <td>Tintín</td>
-    <td>Fantasía</td>
-  </tr>
-  <tr>
-    <td>DC Comics</td>
-    <td>Ficción</td>
-  </tr>
-</table>
-<table style="width: 50%;">
-  <tr>
-    <th>Politicas de privacidad</th>
-    <th>Cookies</th>
-  </tr>
-</table>
-<p align="right"><img src="img/WhatsApp Image 2024-04-29 at 19.09.55.jpeg" alt="Logo" width="150px" height="150px"></p>
 
-</footer>
+
 </html>
