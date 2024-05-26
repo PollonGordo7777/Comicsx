@@ -235,12 +235,13 @@ li:not(:first-child) {
   background-color: #25262e;
   width: 100%;
   padding-left: 30px;
+  height: 50px;
+  width: auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer-menu {
-  float: left;
-  margin-top: 10px;
-}
 
 .footer-menu a {
   color: #cfd2d6;

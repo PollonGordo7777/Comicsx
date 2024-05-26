@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style_product.css">
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <a href="index.html">
+                <img src="img/comicsx.png" alt="Neggawatt" height="auto" width="200px">
+            </a>
+            <form>
+                <input type="text" placeholder="Buscar.." name="buscador">
+                <button id="buttons_header" type="submit">Buscar</button>
+            </form>
+        </div>
+        <div class="buttons_header">
+            <button id="buttons_header">Lista de deseados</button>
+            <button id="buttons_header">Cesta</button>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a class="nav-link" href="index.html">Inicio</a></li>
+            <li><a class="nav-link" href="comicsamericanos.html">Comics americanos</a></li>
+            <li><a class="nav-link" href="comics_europeos.html">Comics europeos</a></li>
+            <li><a class="nav-link" href="acercade.html">Acerca de nosotros</a></li>
+        </ul>
+    </nav>
+<div class="product-main">
+    <main>
+        <div class="container-img">
+            <img src="img/capitan.america.jpg" alt="image-product">
+        </div>
+
+        <div class="container-info-product">
+            <div class="title">
+                <h1>CAPITAN AMERICA: LA LEYENDA VIVIENTE</h1>
+            </div>
+            <div class="container-price">
+                <span>12€</span>
+                <p><strong>Disponibilidad:</strong> En Stock</p>
+            </div>
+
+
+            <div class="container-details-product">
+                <div class="container-add-cart">
+                    <div class="container-quantity">
+                        <input class="input-quantity" placeholder="1" value="1" min="1" />
+                        <div class="btn-increment-decrement">
+                            <i class="fa-solid fa-chevron-up" id="increment"></i>
+                            <i class="fa-solid fa-chevron-down" id="decrement"> </i>
+                        </div>
+                    </div>
+
+                    <button class="btn-add-to-cart">
+                        <i class="fa-regular fa-plus"></i>
+                        Añadir al carrito
+                    </button>
+                    <button class="btn-add-whishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!--Additional Atributtes-->
+            <div class="additional-atributtes">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th class="color-label" scope="row">Autores</th>
+                            <td class="color-data" data-th="Autores">Jack Kirby, Stan Lee</td>
+                        </tr>
+                        <tr>
+                            <th class="color-label" scope="row">Editorial</th>
+                            <td class="color-data" data-th="Editorial"> Panini Comics</td>
+                        </tr>
+                        <tr>
+                            <th class="color-label" scope="row">Colecciones</th>
+                            <td class="color-data" data-th="Colecciones"> Marvel Saga</td>
+                        </tr>
+                        <tr>
+                            <th class="color-label" scope="row">Serie</th>
+                            <td class="color-data" data-th="Serie"> Avengers</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <!-- Descripción -->
+            <div class="container-description">
+                <div class="title-description">
+                    <h4>Descripción</h4>
+                    <i class="fa-solid fa-chevron-down arrow-down"></i>
+                </div>
+                <div class="text-description hidden">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto maiores amet suscipit eius ut
+                        asperiores, unde perferendis vel nihil consectetur architecto atque, quas expedita tempore ad
+                        vitae libero, minus cumque!</p>
+                </div>
+            </div>
+
+            <!-- Contenido descripción-->
+            <div class="container-additional-information">
+                <div class="title-additional-information">
+                    <h4>Información adicional</h4>
+                    <i class="fa-solid fa-chevron-down arrow-down"></i>
+                </div>
+                <div class="text-additional-information hidden">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rerum quod ad. Id sequi a autem,
+                        repellat in dolor est ratione ut provident esse laudantium molestias ipsam nobis tenetur
+                        voluptate.</p>
+                </div>
+            </div>
+
+            <!-- Contenido Caracteristicas-->
+            <div class="container-characteristics">
+                <div class="title-characteristics">
+                    <h4>Caracteristicas</h4>
+                    <i class="fa-solid fa-chevron-down arrow-down"></i>
+                </div>
+                <div class="content-characteristics hidden">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th class="color-label" scope="row">ISBN</th>
+                                <td class="color-data" data-th="ISBN"> 9788419816269</td>
+                            </tr>
+                            <tr>
+                                <th class="color-label" scope="row">Fecha de venta</th>
+                                <td class="color-data" data-th="Fecha de venta"> 13 abr 2023</td>
+                            </tr>
+                            <tr>
+                                <th class="color-label" scope="row">Formato</th>
+                                <td class="color-data" data-th="Formato"> Tapa blanda</td>
+                            </tr>
+                            <tr>
+                                <th class="color-label" scope="row">Num de páginas</th>
+                                <td class="color-data" data-th="Num páginas"> 9788419816269</td>
+                            </tr>
+                            <tr>
+                                <th class="color-label" scope="row">Tamaño</th>
+                                <td class="color-data" data-th="Tamaño"> 17x26 cm</td>
+                            </tr>
+                            <tr>
+                                <th class="color-label" scope="row">Color</th>
+                                <td class="color-data" data-th="Color"> B/N</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="container-social">
+                <span>Compartir</span>
+                <div class="container-buttons-social">
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="container-related-products">
+        <h2>Productos Relacionados</h2>
+        <div class="card-list-products">
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/thor.jpg" alt="producto-1">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Thor - Marvel comic</h3>
+                        <p class="category">
+                            Marvel Comics, Acción
+                        </p>
+                    </div>
+                    <div class="price">12.00€</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/x-men.jpg" alt="producto-2">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Capitan America - Marvel comic</h3>
+                        <p class="category">
+                            Marvel Comics, Acción
+                        </p>
+                    </div>
+                    <div class="price">14.00€</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/batman.jpg" alt="producto-3">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Batman - DC comic</h3>
+                        <p class="category">
+                            DC Comics, Acción
+                        </p>
+                    </div>
+                    <div class="price">12.00€</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/Catwoman_1993_annual_2_REF.jpg" alt="producto-4">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Catwoman - DC Comics</h3>
+                        <p class="category">
+                            DC Comics, Acción
+                        </p>
+                    </div>
+                    <div class="price">15.00€</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <footer>
+        <div class="row primary">
+            <div class="flexbox-container">
+                <div class="column links">
+                    <h3>Comics Americanos</h3>
+                    <ul id="list_footer">
+                        <li><a href="#marvelcomics">Marvel Comics</a></li>
+                        <li><a href="#dccomics">DC comics</a></li>
+                        <li><a href="#novedades">Novedades</a></li>
+                        <li><a href="#proximamente">Próximamente</a></li>
+                    </ul>
+                </div>
+                <div class="column links">
+                    <h3>Comics Europeos</h3>
+                    <ul id="list_footer">
+                        <li><a href="#tintin">Tintin</a></li>
+                        <li><a href="#blackSad">BlackSad</a></li>
+                        <li><a href="#novedades">Novedades</a></li>
+                        <li><a href="#próoimamente">Próximamente</a></li>
+                    </ul>
+                </div>
+                <div class="column links">
+                    <h3>Categorías</h3>
+                    <ul id="list_footer">
+                        <li><a href="#fantasia">Fantasía</a></li>
+                        <li><a href="#aventuras">Aventuras</a></li>
+                        <li><a href="#accion">Acción / Bélicos</a></li>
+                        <li><a href="#cienciaficcion">Ciencia ficción</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img class="footer-logo" src="img/comicsx_white.png" alt="Logo" width="200px" height="auto">
+            </div>
+        </div>
+        <div class="social">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-youtube-square"></i>
+            <i class="fab fa-whatsapp-square"></i>
+        </div>
+        <div class="row copyright">
+            <div class="footer-menu">
+                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="comicsamericanos.html">Comics americanos</a>
+                <a class="nav-link" href="comics_europeos.html">Comics europeos</a>
+                <a class="nav-link" href="acercade.html">Acerca de nosotros</a>
+            </div>
+            <p>Copyright © 2024 Comicx</p>
+        </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/f4e860a0c9.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
